@@ -1,0 +1,114 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Button styles */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header and Navigation */
+header {
+    background: #026fdc; /* Dark background for header */
+    padding: 1px 0;
+    border-bottom: 2px solid #e1cdee; /* Accent border */
+}
+
+header .navbar-brand img {
+    max-height: 20px;
+}
+
+header .navbar-nav .nav-link {
+    color: #000000;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #e3e3e3;
+}
+
+header .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+header .btn-primary:hover {
+    background-color: #010d1a;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0f0e0e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}

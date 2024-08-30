@@ -1,0 +1,193 @@
+/* Define your colors */
+:root {
+    --navbar-bg: #000; 
+    --navbar-text: white; 
+    --navbar-link-hover: #e9e9e9; }
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text); 
+    transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--navbar-link-hover);
+}
+
+.navbar-brand {
+    color: var(--navbar-text); 
+    transition: color 0.3s ease; 
+}
+
+.navbar-brand:hover {
+    color: var(--navbar-link-hover); 
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link.active {
+    color: var(--navbar-text);
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Course Detail Section */
+.course-detail {
+    margin-top: 30px;
+}
+
+.course-detail .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.course-detail .card-img-top {
+    width: 100%;  
+    height: auto; 
+    object-fit: cover; 
+}
+
+.course-detail .card-body {
+    padding: 1.5rem;
+}
+
+.course-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.course-detail p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.course-detail ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+.course-detail ul li {
+    margin-bottom: 0.5rem;
+}
+
+.course-detail .btn-secondary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.course-detail .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .course-detail h1 {
+        font-size: 1.8rem;
+    }
+
+    .course-detail p {
+        font-size: 1rem;
+    }
+
+    .course-detail .btn-secondary {
+        font-size: 1rem;
+    }
+}
+
+/* Custom Card Styling */
+.custom-card {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.highlight-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.highlight-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #138496; 
+}
+.btn-success,
+.btn-secondary {
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 5px; }
+
+.btn-secondary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3; 
+}
+footer {
+    background-color: #000000; /* Dark background */
+    color: #f8f9fa; /* Light text color */
+    padding: 10px 0; /* Reduced padding */
+    text-align: center; /* Centered text */
+    position: relative; /* Keeps footer in document flow */
+}
+
+footer .container {
+    max-width: 1140px; /* Container width */
+    margin: 0 auto; /* Center container */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 5px 0 0; /* Reduced top margin */
+}
+
+footer ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 5px; /* Reduced space between list items */
+}
+
+footer ul li a {
+    color: #f8f9fa; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #adb5bd; /* Slightly lighter color on hover */
+}

@@ -1,0 +1,244 @@
+:root {
+    --navbar-bg: rgb(7, 7, 7)
+    ; /* Dark background for the navbar */
+    --navbar-text: white; /* White text for the links */
+    --navbar-link-hover: #e9e9e9; /* Slightly lighter hover effect */
+}
+
+.navbar {
+    background-color: var(--navbar-bg);}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text); 
+    transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--navbar-link-hover);}
+
+.navbar-brand {
+    color: var(--navbar-text); 
+    transition: color 0.3s ease; 
+}
+
+.navbar-brand:hover {
+    color: var(--navbar-link-hover); 
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link.active {
+    color: var(--navbar-text);
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('../assets/images/bg.jpg') no-repeat center center/cover;
+    color: rgb(246, 246, 246);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    font-size: 1.2em;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+    padding: 50px 0;
+}
+
+.featured-courses h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #007bff;
+}
+
+.course-wrapper {
+    overflow: hidden;
+}
+
+.course-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.course-grid {
+    display: flex;
+    gap: 20px; /* Adjust spacing between cards if needed */
+}
+
+.card {
+    flex: 1 0 18rem; /* Ensures card is flexible but has a minimum width */
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem; /* Ensures card does not exceed 18rem width */
+    height: 30rem; /* Set a consistent height for all cards */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15rem; /* Set a consistent height for card images */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Ensures the card body takes up remaining space */
+    justify-content: space-between; /* Pushes content to top and button to bottom */
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centers the button horizontally */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+/* REVIEW SECTION */
+#makeitfull {
+    display: flex;
+    justify-content: center;
+    transform: translateY(35px);
+}
+#makeitfull img {
+    width: 50px;
+}
+.review {
+    background: #F8F8F8;
+    width: 100%;
+    margin-bottom: 50px; /* Adds space between review section and footer */
+}
+.rev-container {
+    padding: 10px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rev-container .rev-card {
+    width: 550px;
+    height: 240px;
+    margin-bottom: 40px;
+    background: #fff;
+    display: flex;
+    padding: 10px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+}
+.rev-card:hover {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+.identity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.identity img {
+    width: 120px;
+    height: 120px;
+    transition-duration: .8s;
+    border-radius: 50%;
+}
+.identity img:hover {
+    transform: scale(2.2);
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.identity p {
+    width: 150px;
+    font-weight: bold;
+    color: #2E3D49;
+    text-align: center;
+}
+.identity h6 {
+    width: 150px;
+    text-align: center;
+}
+.identity .rating img {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+.rev-cont {
+    overflow: hidden;
+}
+.rev-cont #title {
+    padding: 10px;
+    color: #2E3D49;
+    font-weight: bold;
+}
+.rev-cont #content {
+    padding: 10px;
+    font-size: .9em;
+    color: #2E3D49;
+    line-height: 22px;
+    text-align: justify;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #000000; /* Dark background */
+    color: #f8f9fa; /* Light text color */
+    padding: 10px 0; /* Reduced padding */
+    text-align: center; /* Centered text */
+    position: relative; /* Keeps footer in document flow */
+}
+
+footer .container {
+    max-width: 1140px; /* Container width */
+    margin: 0 auto; /* Center container */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 5px 0 0; /* Reduced top margin */
+}
+
+footer ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 5px; /* Reduced space between list items */
+}
+
+footer ul li a {
+    color: #f8f9fa; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #adb5bd; /* Slightly lighter color on hover */
+}

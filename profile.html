@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learnSpark</title>
+        <link id="favicon" rel="icon" href="assets/images/fav.png" type="image/png" style="height: 100px;">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <style>
+        .profile-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        .profile-img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .profile-info {
+            font-size: 1.2rem;
+        }
+        .enrolled-courses {
+            margin-top: 2rem;
+        }
+        /* FOOTER STYLES */
+footer {
+    background-color: #000000; /* Dark background */
+    color: #f8f9fa; /* Light text color */
+    padding: 10px 0; /* Reduced padding */
+    text-align: center; /* Centered text */
+    position: relative; /* Keeps footer in document flow */
+}
+
+footer .container {
+    max-width: 1140px; /* Container width */
+    margin: 0 auto; /* Center container */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 5px 0 0; /* Reduced top margin */
+}
+
+footer ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 5px; /* Reduced space between list items */
+}
+
+footer ul li a {
+    color: #f8f9fa; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #adb5bd; /* Slightly lighter color on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+            <a href="home.html">
+                <img src="assets/images/logo-no-background.png" class="img-fluid" alt="E-learnSpark Logo" style="width: 250px; height: 90px;">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card profile-card">
+                    <div class="card-body text-center">
+                        <img src="assets/images/red_suit.jpg" alt="Profile Image" class="profile-img">
+                        <h2 id="userName" class="card-title">User Name</h2>
+                        <p id="userEmail" class="profile-info">redsuit@gmail.com</p>
+                        <a href="#" class="btn btn-primary mt-3">Edit Profile</a>
+                    </div>
+                </div>
+                
+                <div class="card enrolled-courses">
+                    <div class="card-header">Enrolled Courses</div>
+                    <div class="card-body">
+                        <ul id="courseList" class="list-unstyled">
+                            <!-- Enrolled courses will be dynamically inserted here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/profile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 E-learnSpark. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+</html>

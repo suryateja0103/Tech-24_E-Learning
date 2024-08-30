@@ -1,0 +1,249 @@
+:root {
+    --navbar-bg: #000; /* Dark background for the navbar */
+    --navbar-text: white; /* White text for the links */
+    --navbar-link-hover: #e9e9e9; /* Slightly lighter hover effect */
+}
+
+.navbar {
+    background-color: var(--navbar-bg);}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text); 
+    transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--navbar-link-hover);}
+
+.navbar-brand {
+    color: var(--navbar-text); 
+    transition: color 0.3s ease; 
+}
+
+.navbar-brand:hover {
+    color: var(--navbar-link-hover); 
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link.active {
+    color: var(--navbar-text);
+}
+
+/* 3D Effect for Course Cards */
+.card {
+    perspective: 1000px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    width: 18rem; }
+
+.card:hover {
+    transform: rotateY(10deg);
+}
+
+.card-body {
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.card:hover .card-body {
+    transform: translateZ(20px);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Card Title and Text Styling */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Course Price Styling */
+.course-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745; 
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .course-price {
+        font-size: 1rem;
+    }
+}
+
+/* Course Preview Container Adjustments */
+.course-preview-container {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 350px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.course-preview-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+}
+
+.course-details {
+    padding: 15px;
+    display: none; 
+}
+
+.course-preview-container:hover .course-details {
+    display: block;
+}
+
+.enroll-button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.enroll-button:hover {
+    background-color: #d81b60;
+}
+
+/* Share Container Styling */
+.share-container {
+    position: relative;
+    display: inline-block;
+}
+
+.share-toggle {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.share-dropdown {
+    display: none; 
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; 
+    left: 0;
+}
+
+.share-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.share-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.share-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.share-button {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.share-button i {
+    margin-right: 5px;
+}
+
+.share-button.facebook {
+    background-color: #3b5998;
+}
+
+.share-button.twitter {
+    background-color: #1da1f2;
+}
+
+.share-button.linkedin {
+    background-color: #0077b5;
+}
+
+.share-button:hover {
+    opacity: 0.8;
+}
+footer {
+    background-color: #000000; /* Dark background */
+    color: #f8f9fa; /* Light text color */
+    padding: 10px 0; /* Reduced padding */
+    text-align: center; /* Centered text */
+    position: relative; /* Keeps footer in document flow */
+}
+
+footer .container {
+    max-width: 1140px; /* Container width */
+    margin: 0 auto; /* Center container */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 5px 0 0; /* Reduced top margin */
+}
+
+footer ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 5px; /* Reduced space between list items */
+}
+
+footer ul li a {
+    color: #f8f9fa; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #adb5bd; /* Slightly lighter color on hover */
+}

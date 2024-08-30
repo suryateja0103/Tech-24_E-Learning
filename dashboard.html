@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learnSpark</title>
+    <link id="favicon" rel="icon" href="assets/images/fav.png" type="image/png" style="height: 100px;">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+ 
+</head>
+<body>
+    <header class="bg-light shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="home.html">
+                <img src="assets/images/logo-no-background.png" class="img-fluid" alt="E-learnSpark Logo" style="width: 250px; height: 90px;">
+            </a>
+            <div class="collapse navbar-collapse d-flex justify-content-end">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <img src="assets/images/pr.png" alt="Profile" class="img-fluid rounded-circle" style="max-height: 40px;">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <h1 class="mb-4">Dashboard</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card dashboard-card">
+                    <div class="card-header">Total Courses</div>
+                    <div class="card-body">
+                        <h2 id="totalCourses">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card dashboard-card">
+                    <div class="card-header">Enrolled Students</div>
+                    <div class="card-body">
+                        <h2 id="enrolledStudents">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card dashboard-card">
+                    <div class="card-header">Active Instructors</div>
+                    <div class="card-body">
+                        <h2 id="activeInstructors">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 E-learnSpark. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+</html>
